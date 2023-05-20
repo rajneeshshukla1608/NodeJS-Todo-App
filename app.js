@@ -15,11 +15,7 @@ import cors from 'cors'
 app.use(express.json())
 //to access cookies
 app.use(cookieParser())
-app.use(cors({
-   orign: [process.env.FRONTEND_URL],
-   methods: ["GET", "POST", "PUT", "DELETE"], 
-   credentials: true //credential will not reach to frontend
-}))
+
 
 
 
