@@ -4,7 +4,7 @@ const connectDB = () => {
     mongoose.connect(process.env.MONGO_URI, {
         dbName: "backendapi"
     })
-        .then(() => console.log("Database connected"))
+        .then((c) => console.log(`Database connected to ${c.connection.host}`))
         .catch((e) => console.log(e))
 
 }
