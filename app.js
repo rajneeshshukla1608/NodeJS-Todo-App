@@ -19,6 +19,13 @@ app.use(cookieParser())
 
 
 
+app.use(cors({
+   origin: 'http://localhost:5173',
+   methods: ["GET", "POST", "PUT", "DELETE"], 
+   credentials: true //credential will not reach to frontend
+}))
+
+
 //using routes
 app.use( "/api/v1/users", userRouter)
 app.use( "/api/v1/task", taskRouter)
