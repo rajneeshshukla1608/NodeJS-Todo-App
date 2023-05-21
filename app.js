@@ -20,7 +20,7 @@ app.use(cookieParser())
 
 
 app.use(cors({
-   origin: 'http://localhost:5173',
+   origin: 'https://client-todo-k574ks1tq-rajneeshshukla1608.vercel.app',
    methods: ["GET", "POST", "PUT", "DELETE"], 
    credentials: true //credential will not reach to frontend
 }))
